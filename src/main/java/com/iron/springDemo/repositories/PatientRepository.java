@@ -9,6 +9,8 @@ import org.springframework.data.repository.query.Param;
 import java.sql.Date;
 import java.util.List;
 
+/*como se puede observar, las interfaces si que permiten herencia multiple. La segunda interfaz de la que hereda esta es para que un endpoint
+ * que admita parámetros esté asignado a un unico metodo*/
 public interface PatientRepository extends JpaRepository<Patient, Integer>, JpaSpecificationExecutor<Patient> {
 
 

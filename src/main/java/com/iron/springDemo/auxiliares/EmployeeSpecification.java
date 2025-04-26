@@ -8,6 +8,8 @@ import java.util.Map;
 
 public class EmployeeSpecification {
 
+    //esto sirve para que el endpoint me detecte todos los parámetros.
+
     public static Specification<Employee> withFilters(Map<String, String> params) {
         return (root, query, criteriaBuilder) -> {
             var predicates = criteriaBuilder.conjunction();

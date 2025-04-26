@@ -17,6 +17,10 @@ public class PatientController {
     @Autowired
     private PatientRepository patientRepository;
 
+    /*Los requestParam con required false quiere decir que son opcionales, con esto me aseguro que el método asociado permita endpoints dinámicos.
+    Además, de hacerlos en métodos a parte, tendría que rellenar los GetMapping, ya que JPA, si encuentra más de un getMaping vacío, se produciría
+    errores y no se podría levantar el servidor al detectar ambiguedad. Y la idea es que al meter parametros en un endpoint, este no sea
+    modificado*/
     @GetMapping()
     @ResponseStatus(HttpStatus.OK)
     public List<Patient> getAllPatients(
