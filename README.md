@@ -56,6 +56,15 @@ Patient Table
 
 <br>
 
+Creacción de las tablas 
+
+![img.png](img.png)
+
+Relación entre tablas 
+
+![img_1.png](img_1.png)
+
+
 ## Instructions
 
 1. **Get all doctors:** Create a route to get all doctors.
