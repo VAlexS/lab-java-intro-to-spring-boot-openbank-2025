@@ -137,6 +137,13 @@ Aquí le paso un ID que no existe
 ![img_18.png](img_18.png)
 
 8. **Get patients by admitting doctor's department:** Create a route to get patients by the department that their admitting doctor is in (For example, get all patients admitted by a doctor in cardiology).
+
+Aquí busco los pacientes filtrando por el departamento del médico que les ha atendido
+
+![img_19.png](img_19.png)
+
+![img_20.png](img_20.png)
+
 9. **Get all patients with a doctor whose status is OFF:** Create a route to get all patients with a doctor whose `status` is OFF.
 
 ![img_17.png](img_17.png)

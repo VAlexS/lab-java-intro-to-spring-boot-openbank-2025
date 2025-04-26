@@ -1,7 +1,6 @@
 package com.iron.springDemo.auxiliares;
 
 import com.iron.springDemo.models.Patient;
-import com.iron.springDemo.models.Status;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.util.Map;
@@ -16,6 +15,10 @@ public class PatientSpecification {
                 switch (key) {
                     case "dateOfBirth":
                         predicates.getExpressions().add(criteriaBuilder.equal(root.get("dateOfBirth"), java.sql.Date.valueOf(value)));
+                        break;
+                    case "department":
+                        // Filtrar por departamento del médico que admitió al paciente
+                        predicates.getExpressions().add(criteriaBuilder.like(root.get("employee").get("department"), "%" + value + "%"));
                         break;
                     default:
                         // Ignorar parámetros desconocidos
