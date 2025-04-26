@@ -121,7 +121,17 @@ Aquí pruebo con los 3 posibles STATUS
 ![img_13.png](img_13.png)
 
 5. **Get all patients:** Create a route to get all patients.
+
+![img_14.png](img_14.png)
+
 6. **Get patient by ID:** Create a route to get a patient by `patient_id`.
+
+![img_15.png](img_15.png)
+
+Aquí le paso un ID que no existe
+
+![img_16.png](img_16.png)
+
 7. **Get patients by date of birth range:** Create a route to get patients date of birth within a specified range.
 8. **Get patients by admitting doctor's department:** Create a route to get patients by the department that their admitting doctor is in (For example, get all patients admitted by a doctor in cardiology).
 9. **Get all patients with a doctor whose status is OFF:** Create a route to get all patients with a doctor whose `status` is OFF.
