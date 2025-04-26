@@ -64,13 +64,62 @@ Relación entre tablas
 
 ![img_1.png](img_1.png)
 
+Al hacer el ``select *`` de cada tabla, tengo esto.
+
+En primer lugar, la tabla employee
+
+![img_2.png](img_2.png)
+
+En segundo lugar, la tabla patient
+
+![img_3.png](img_3.png)
+
+Ya que la columna date_of_birth de la tabla patient es un varchar(10) y en java, he definido el atributo como Date, para que no haya 
+discrepancias, cambio el tipo de dato en mySQL para que date_of_birth sea un DATE en vez de un varchar(10). 
+Para ello, he ejecutado este comando
+
+``
+ALTER TABLE patient MODIFY COLUMN date_of_birth DATE;
+``
+
 
 ## Instructions
 
 1. **Get all doctors:** Create a route to get all doctors.
+
+![img_4.png](img_4.png)
+
 2. **Get doctor by ID:** Create a route to get a doctor by `employee_id`.
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+
 3. **Get doctors by status:** Create a route to get doctors by `status`.
+
+Pruebo a pasarle un status no valido para asegurarme que falla
+
+![img_8.png](img_8.png)
+
+Aquí pruebo con los 3 posibles STATUS
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
+
+
+
 4. **Get doctors by department:** Create a route to get doctors by `department`.
+
+![img_12.png](img_12.png)
+
+![img_13.png](img_13.png)
+
 5. **Get all patients:** Create a route to get all patients.
 6. **Get patient by ID:** Create a route to get a patient by `patient_id`.
 7. **Get patients by date of birth range:** Create a route to get patients date of birth within a specified range.
