@@ -133,6 +133,9 @@ Aquí le paso un ID que no existe
 ![img_16.png](img_16.png)
 
 7. **Get patients by date of birth range:** Create a route to get patients date of birth within a specified range.
+
+![img_18.png](img_18.png)
+
 8. **Get patients by admitting doctor's department:** Create a route to get patients by the department that their admitting doctor is in (For example, get all patients admitted by a doctor in cardiology).
 9. **Get all patients with a doctor whose status is OFF:** Create a route to get all patients with a doctor whose `status` is OFF.
 
