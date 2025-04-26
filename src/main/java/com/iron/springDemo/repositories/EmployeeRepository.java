@@ -11,8 +11,6 @@ import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer>, JpaSpecificationExecutor<Employee> {
 
-    List<Employee> findEmployeesByStatus(Status status);
-
     @Query("SELECT e FROM Employee e WHERE "
             + "(:status IS NULL OR e.status = :status) "
             + "AND (:department IS NULL OR e.department LIKE %:department%)")

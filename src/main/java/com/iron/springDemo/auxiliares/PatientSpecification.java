@@ -14,11 +14,8 @@ public class PatientSpecification {
 
             params.forEach((key, value) -> {
                 switch (key) {
-                    case "status":
-                        predicates.getExpressions().add(criteriaBuilder.equal(root.get("status"), Status.valueOf(value)));
-                        break;
-                    case "department":
-                        predicates.getExpressions().add(criteriaBuilder.like(root.get("department"), "%" + value + "%"));
+                    case "dateOfBirth":
+                        predicates.getExpressions().add(criteriaBuilder.equal(root.get("dateOfBirth"), java.sql.Date.valueOf(value)));
                         break;
                     default:
                         // Ignorar parámetros desconocidos
